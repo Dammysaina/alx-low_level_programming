@@ -1,26 +1,21 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
-
 /**
- *  * main - Entry point
- *   *
- *    * Return: Always 0 (Success)
-      */
-
+ *  *  *  *  *  *  *  *  * main - Entry point
+ *   *   *   *   *   *   *   *   *
+ *    *    *    *    *    *    *    *    * Return: Always 0 (Success)
+     */
 int main(void)
 {
-	int d;
+int x;
 
-	for (d = '0'; d <= '9'; d++)
+for (x = 0; x < 10; x++)
+{
+	putchar((x % 10) + '0');
+	if (x < 9)
 	{
-		putchar(d);
-		if (d != '9')
-		{
-																		putchar(',');															putchar(' ');
-		}
+		putchar(0x2C);
+		putchar(0x20);
 	}
-	putchar('\n');
-
-	return (0);
+}
+return (0);
 }
