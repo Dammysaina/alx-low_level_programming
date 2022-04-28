@@ -15,7 +15,6 @@ int wildcmp(char *s1, char *s2);
 int strlen_no_wilds(char *str)
 {
 	int len = 0, index = 0;
-	
 	if (*(str + index))
 	{
 		if (*str != '*')
@@ -23,7 +22,6 @@ int strlen_no_wilds(char *str)
 		index++;
 		len += strlen_no_wilds(str + index);
 	}
-	
 	return (len);
 }
 
@@ -47,9 +45,9 @@ void iterate_wild(char **wildstr)
  *    * @str: The string to be matched.
  *     * @postfix: The postfix.
  *      *
- *       * Return: If str and postfix are identical - a pointer to the null byte
- *        *                                            located at the end of postfix.
- *         *         Otherwise - a pointer to the first unmatched character in postfix.
+ *       * Return: If str and postfix are identical - Null byte
+ *        *                                located at the end of postfix.
+ *         * Otherwise - First unmatched character in postfix.
  */
 char *postfix_match(char *str, char *postfix)
 {
