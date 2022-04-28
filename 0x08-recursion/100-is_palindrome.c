@@ -13,6 +13,7 @@ int is_palindrome(char *s);
 int find_strlen(char *s)
 {
 	int len = 0;
+
 	if (*(s + len))
 	{
 		len++;
@@ -50,6 +51,7 @@ int is_palindrome(char *s)
 {
 	int index = 0;
 	int len = find_strlen(s);
+
 	if (!(*s))
 		return (1);
 	return (check_palindrome(s, len, index));
