@@ -1,7 +1,7 @@
 /*
  *  * File: 6-sum_dlistint.c
  *   * Auth: Brennan D Baraban
- *    */
+     */
 
 #include "lists.h"
 
@@ -10,7 +10,7 @@
  *   * @head: The head of the dlistint_t list.
  *    *
  *     * Return: The sum of all the data.
- *      */
+  */
 int sum_dlistint(dlistint_t *head)
 {
 	int sum = 0;
@@ -20,5 +20,6 @@ int sum_dlistint(dlistint_t *head)
 		sum += head->n;
 		head = head->next;
 	}
+
 	return (sum);
 }
